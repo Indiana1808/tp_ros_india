@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="tp_ros_india" name="pub" type="publisher_clean.py">
+	<node pkg="tp_ros_india" name="sub" type="subscribed_clean.py">
+	output="screen">
+
+		<remap from="subsrcibed_topic" to="publish_topic"/>
+	</node>
+</launch>
